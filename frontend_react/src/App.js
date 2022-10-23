@@ -1,9 +1,9 @@
 import './App.css';
-import Form from './components/contact/Form'
+import Contact from './components/contact/Contact'
 function App() {
   return (
     <>
-      <Form/>
+      <Contact/>
     </>
   );
 }
