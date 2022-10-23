@@ -3,19 +3,12 @@ import Form from "./Form";
 
 const Contact = () => {
 	return (
-		<div className="overflow-hidden  w-full h-auto lg:mt-16 xl:mt-[-5rem]">
-            <svg viewBox="0 0 1920 2332" className="relative w-[100vw] h-[33rem] mt-[28%] sm:mt-0 sm:h-auto z-0" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 864.908L126.5 929.288H246.5H369L511.5 864.908L637 929.288L776 838.896H901.5L987.5 658.11L1110 727.043L1242 658.11L1374.5 611.288L1472.88 434.405H1576L1701.5 279.632L1814 193.791L1920 0V2332H0V864.908Z" fill="#D9D9D9"/>
-            </svg>
-            <svg className="absolute top-44 xl:-top-16 lg:top-20 w-[100vw] z-10" viewBox="0 0 1920 2309" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 924.379L126.441 993.149H246.384H368.827L511.26 924.379L636.701 993.149L775.636 896.593H901.077L987.037 703.482L1109.48 777.114L1241.42 703.482L1373.85 653.467L1472.19 464.523H1575.26L1700.7 299.198L1848.84 172L1919.1 0.5L1953 590.25V1908L1914 2307L0 2491.5V924.379Z" fill="#4F4B4B"/>
-            </svg>
-
-			<div className="flex absolute sm:top-[12rem] top-[6rem] space-x-5 ml-8 sm:ml-56 ">
-				<h3 className="sm:text-6xl text-[12vw] w-[100vw] sm:w-auto leading-4 font-[Caudex] text-[#3A3845]">Contact Us</h3>
-				<div className="">
+		<div className="overflow-hidden w-full h-auto">
+			<div className="flex relative space-x-2 mt-10 sm:mt-40 xl:mt-[20rem] xl:mb-[-25rem] sm:mb-[-13rem] -mb-10 ml-8 sm:ml-40 ">
+				<h3 className="sm:text-6xl text-5xl font-[Caudex] text-[#3A3845]">Contact Us</h3>
+				<div className="ml-8 sm:ml-56">
 					<svg
-						className="w-16 h-16 -mt-8 sm:w-[82px] relative sm:static right-[50vw] sm:h-[84px]"
+						className="w-16 h-16 -mt-3 sm:w-[82px] sm:h-[84px]"
 						viewBox="0 0 126 122"
 						fill="none"
 					>
@@ -26,12 +19,18 @@ const Contact = () => {
 					</svg>
 				</div>
 			</div>
-				<p className="sm:text-xl text-base leading-[1.1rem] sm:ml-56 ml-8 top-40 font-[Caudex] w-[77%] sm:w-[45%] absolute lg:top-[18rem]">
+				<p className="sm:text-xl ml-8 sm:ml-40 mt-14 xl:mt-[26rem] xl:mb-[-28rem] sm:mt-56 sm:mb-[-13rem] -mb-10 w-[80%] sm:w-[60%] text-base leading-[1.1rem] font-[Caudex]">
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum porro
 					et odio veritatis repellenduddds eum minima nesciunt libero! Repellendus
 					voluptatem facilis, sequi , onem iure nobis
 					maiores sed velit molestias facere dolor iusto aliquam!
 				</p>
+				<svg className="w-full" viewBox="0 0 1920 2360" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 864.908L126.5 929.288H246.5H369L511.5 864.908L637 929.288L776 838.896H901.5L987.5 658.11L1110 727.043L1242 658.11L1374.5 611.288L1472.88 434.405H1576L1701.5 279.632L1814 193.791L1920 0V2332H0V864.908Z" fill="#D9D9D9"/>
+				<path d="M0 975.379L126.441 1044.15H246.384H368.827L511.26 975.379L636.701 1044.15L775.636 947.593H901.077L987.037 754.482L1109.48 828.114L1241.42 754.482L1373.85 704.467L1472.19 515.523H1575.26L1700.7 350.198L1848.84 223L1919.1 51.5L1953 641.25V1959L1914 2358L0 2542.5V975.379Z" fill="#4F4B4B"/>
+				</svg>
+
+
 			<Form />
 		</div>
 	);
