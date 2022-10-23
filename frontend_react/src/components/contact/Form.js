@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
   return (
-	<section className="absolute top-full lg:top-[120%] w-full bg-[#4F4B4B] z-50">
+	<section className="absolute sm:top-full top-[60%] lg:top-[120%] w-full bg-[#4F4B4B] z-50">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div className="py-6 md:py-0 md:px-6">
 			<h1 className="text-4xl font-bold text-white">Get in touch</h1>
