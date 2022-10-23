@@ -1,5 +1,5 @@
 import "./App.css";
-import Form from "./components/Form";
+import Contact from './components/contact/Contact'
 import HomeHero from "./components/HomeHero";
 import Navbar from "./components/Navbar";
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar />
       <HomeHero />
-      <Form />
+      <Contact />
     </>
   );
 }
