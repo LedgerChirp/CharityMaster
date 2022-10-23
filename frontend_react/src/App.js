@@ -1,9 +1,13 @@
-import './App.css';
-import Contact from './components/contact/Contact'
+import "./App.css";
+import Form from "./components/Form";
+import HomeHero from "./components/HomeHero";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Contact/>
+      <Navbar />
+      <HomeHero />
+      <Form />
     </>
   );
 }
