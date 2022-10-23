@@ -1,13 +1,9 @@
-import "./App.css";
-import Form from "./components/Form";
-import HomeHero from "./components/HomeHero";
-import Navbar from "./components/Navbar";
+import './App.css';
+import Contact from './components/contact/Contact'
 function App() {
   return (
     <>
-      <Navbar />
-      <HomeHero />
-      <Form />
+      <Contact/>
     </>
   );
 }

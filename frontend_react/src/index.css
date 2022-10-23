@@ -15,8 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.background{
-  background: url(assets/homeimage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
