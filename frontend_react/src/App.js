@@ -1,16 +1,8 @@
-import Contact from './components/contact/Contact'
-import HomeHero from "./components/HomeHero";
-import Navbar from "./components/Navbar";
-import Footer from "./components/contact/Footer";
-import About from "./components/About";
+import Home from './pages/Home';
 function App() {
   return (
     <>
-      <Navbar />
-      <HomeHero />
-      <About/>
-      <Contact />
-      <Footer/>
+      <Home/>
     </>
   );
 }
