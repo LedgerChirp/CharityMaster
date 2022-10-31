@@ -1,13 +1,24 @@
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
+import About from './components/About';
+import Contact from './components/contact/Contact';
+import Footer from './components/contact/Footer'
+import {Route,Routes} from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
 function App() {
   return (
-    <>
-      {/* <Home/> */}
-      <LoginPage/>
-      {/* <RegisterPage/> */}
-    </>
+    <div className='overflow-hidden'>
+    <Navbar/>
+        <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        </Routes>
+        <Footer/>
+    </div>
   );
 }
 
