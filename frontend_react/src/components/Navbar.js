@@ -42,17 +42,8 @@ const Navbar = () => {
                   </li>
                   <li>
                     <NavLink
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      to="/secret"
-                    >
-                      More
-                    </NavLink>
-                  </li>
-
-                  <li>
-                    <NavLink
-                      className="text-[#F0B65A] text-sm uppercase transition hover:text-gray-500/75"
-                      to="/secret"
+                      className="text-gray-500 text-sm uppercase transition hover:text-gray-500/75"
+                      to="/donate"
                     >
                       Donate
                     </NavLink>

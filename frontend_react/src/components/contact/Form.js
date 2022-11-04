@@ -29,7 +29,7 @@ const Form = () => {
 				</p>
 			</div>
 		</div>
-		<form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+		<form noValidate="" method='post' className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
 			<label className="block">
 				<span className="mb-3 text-white">Full name</span>
 				<input type="text" placeholder=" Enter Name ...." className="block p-2 pl-3 w-full rounded-3xl shadow-sm focus:ring focus:ring-opacity-75 bg-[#4F4B4B] border border-[#B4BEC8] focus:ring-violet-400" />
