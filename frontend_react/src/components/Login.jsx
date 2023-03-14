@@ -1,6 +1,30 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { useState } from 'react'
+import {json, NavLink} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+    const loginUser = async (e) =>{
+        e.preventDefault();
+        const res = await fetch("/login",{
+            method : 'post',
+            headers : {
+                "Content-Type" : "application/json"
+            },
+            body : JSON.stringify({
+                email, password
+            })
+        })
+        const data = await res.json();
+        if(data === true){
+            window.alert("Successfully Login");
+            navigate('/');
+        } else{
+            window.alert("Invalid Details");
+        }
+    }
   return (
     <>
       <div className='font-serif'>
@@ -14,7 +38,7 @@ const Login = () => {
 
                     <form method='post' className="mx-auto mt-8 mb-0 max-w-md space-y-4">
                     <div>
-                        <label for="email" className="sr-only">Email</label>
+                        <label htmlFor="email" className="sr-only">Email</label>
 
                         <div className="relative">
                         <input
@@ -22,6 +46,8 @@ const Login = () => {
                             className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
                             placeholder="Enter email"
                             name='email'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
 
                         <span className="absolute inset-y-0 right-4 inline-flex items-center">
@@ -44,13 +70,15 @@ const Login = () => {
                     </div>
 
                     <div>
-                        <label for="password" className="sr-only">Password</label>
+                        <label htmlFor="password" className="sr-only">Password</label>
                         <div className="relative">
                         <input
                             type="password"
                             className="w-full rounded-lg border-gray-200 p-4 pr-12 text-sm shadow-sm"
                             placeholder="Enter password"
                             name='password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
 
                         <span className="absolute inset-y-0 right-4 inline-flex items-center">
@@ -87,6 +115,7 @@ const Login = () => {
                         <input
                         type="submit"
                         value="Sign in"
+                        onClick={loginUser}
                         className="ml-3 inline-block rounded-lg bg-[#0f876b] px-5 py-3 text-sm font-medium text-white"
                         />
                         
